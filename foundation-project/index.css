@@ -3,11 +3,156 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.container {
+    padding-inline: 100px;
+}
+
 header {
     background-color: #1f2937;
+    padding-block: 80px;
 }
 
 .nav-container {
     font-size: 18px;
     color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-info {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header-h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    line-height: 1;
+}
+
+.header-info-container {
+    width: 50%;
+    flex: 1;
+}
+
+.header-p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-top: 10px;
+}
+
+.header-btn {
+    margin-top: 10px;
+    background-color: #3882f6;
+    padding-inline: 20px;
+    padding-block: 8px;
+    border: none;
+}
+
+.header-img-container {
+    border: 1px solid black;
+    width: 800px;
+    flex: 1;
+}
+
+.section-1 {
+    margin-top: 30px;
+}
+
+.section-1-h2 {
+    text-align: center;
+}
+
+.section-1-inner-div {
+    width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+    border-radius: 30px;
+    flex: 1;
+}
+
+.section-1-p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.section-1-flex-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.section-1-flex-item {
+    width: 500px;
+}
+
+.quote-div {
+    margin-top: 50px;
+    padding: 80px;
+    background-color: gray;
+    font-size: 24px;
+}
+
+.quote-p {
+    width: 60%;
+    margin-inline: auto;
+    font-weight: 300;
+}
+
+.quote-span {
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: 900px;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.cta-h3,
+.cta-p {
+    color: #e5e7eb;
+    font-size: 24px;
+
+}
+
+.cta-p {
+    font-size: 18px;
+}
+
+.cta-btn {
+    padding-inline: 18px;
+    padding-block: 5px;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #E5E7EB;
+    font-size: 16px;
+    margin-top: 50px;
+    padding: 5px;
+    text-align: center;
 }
