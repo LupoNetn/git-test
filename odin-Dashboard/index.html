@@ -1,11 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- Lucide Icons (for sidebar + UI icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <!-- ============ SIDEBAR ============ -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <i data-lucide="room"></i>
+            <h1 class="sidebar-title">Dashboard</h1>
+          </div>
+
+          <ul class="sidebar-nav">
+            <li><i data-lucide="home"></i><p>Home</p></li>
+            <li><i data-lucide="user"></i><p>Profile</p></li>
+            <li><i data-lucide="message-circle"></i><p>Messages</p></li>
+            <li><i data-lucide="clock"></i><p>History</p></li>
+            <li><i data-lucide="check-square"></i><p>Tasks</p></li>
+            <li class="nav-spacing"><i data-lucide="users"></i><p>Communities</p></li>
+            <li><i data-lucide="settings"></i><p>Settings</p></li>
+            <li><i data-lucide="life-buoy"></i><p>Support</p></li>
+            <li><i data-lucide="shield"></i><p>Privacy</p></li>
+          </ul>
+        </aside>
+
+        <!-- ============ MAIN CONTENT ============ -->
+        <main class="main">
+          <div class="main-inner">
+
+            <!-- ==== TOP BAR ==== -->
+            <header class="main-header">
+              <!-- Left: Search bar -->
+              <div class="header-left">
+                <div class="searchbar">
+                  <i data-lucide="search"></i>
+                  <input type="text" class="input-search" placeholder="Search..." />
+                </div>
+                <div class="user-icons">
+                  <i data-lucide="star"></i>
+                  <div class="user-avatar"><i data-lucide="play"></i></div>
+                  <p>Morgan Oakley</p>
+                </div>
+              </div>
+
+              <!-- Right: User Greeting + Buttons -->
+              <div class="header-right">
+                <div class="user-info">
+                  <div class="avatar"><i data-lucide="play"></i></div>
+                  <div class="user-name">
+                    <p>Hi, There</p>
+                    <h2>Morgan Oakley <span>(@morgan)</span></h2>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button>New</button>
+                  <button>Upload</button>
+                  <button>Share</button>
+                </div>
+              </div>
+            </header>
+
+            <!-- ==== DASHBOARD BODY ==== -->
+            <div class="dashboard">
+              <!-- LEFT: Projects -->
+              <section class="projects">
+                <h2>Your Projects</h2>
+                <div class="project-grid">
+                  <div class="card">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore blanditiis quod accusamus nihil veritatis.</p>
+                    <div class="icons">⭐ 🔗 👁️</div>
+                  </div>
+                  <div class="card">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum pariatur possimus, accusantium maiores.</p>
+                    <div class="icons">⭐ 🔗 👁️</div>
+                  </div>
+                  <div class="card">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates perspiciatis porro voluptate fugiat.</p>
+                    <div class="icons">⭐ 🔗 👁️</div>
+                  </div>
+                  <div class="card">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus quibusdam obcaecati quisquam atque.</p>
+                    <div class="icons">⭐ 🔗 👁️</div>
+                  </div>
+                  <div class="card">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus sed rerum commodi laborum.</p>
+                    <div class="icons">⭐ 🔗 👁️</div>
+                  </div>
+                  <div class="card">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime dicta expedita numquam voluptas.</p>
+                    <div class="icons">⭐ 🔗 👁️</div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- RIGHT: Announcements + Trending -->
+              <aside class="side-section">
+                <section class="announcements">
+                  <h2>Announcements</h2>
+                  <div class="card">
+                    <h4>Site Maintenance</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto assumenda provident cumque temporibus soluta.</p>
+                  </div>
+                  <div class="card">
+                    <h4>Community Share Day</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil quaerat ullam suscipit consequatur.</p>
+                  </div>
+                  <div class="card">
+                    <h4>Updated Privacy Policy</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam accusamus illum deleniti mollitia.</p>
+                  </div>
+                </section>
+
+                <section class="trending">
+                  <h2>Trending</h2>
+                  <div class="card">@tegan – World Peace Builder</div>
+                  <div class="card">@morgan – Super Cool Project</div>
+                  <div class="card">@kendall – Life Changing App</div>
+                  <div class="card">@alex – No Traffic Maker</div>
+                </section>
+              </aside>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- Activate Lucide Icons -->
+    <script>lucide.createIcons();</script>
+  </body>
 </html>
