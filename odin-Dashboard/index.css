@@ -16,7 +16,7 @@ body {
 /* Container: Sidebar + Main */
 .container {
   display: grid;
-  grid-template-columns: 220px auto;
+  grid-template-columns: 240px auto;
   min-height: 100vh;
 }
 
@@ -94,6 +94,11 @@ body {
   align-items: center;
 }
 
+.user-icons {
+  display: flex;
+  gap: 15px;
+}
+
 .searchbar {
   display: flex;
   align-items: center;
@@ -147,6 +152,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr; /* Projects wider */
   gap: 20px;
+  padding: 10px;
   align-items: stretch; /* equal height */
 }
 
@@ -158,8 +164,8 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+  gap: 20px;
   flex: 1;
 }
 
