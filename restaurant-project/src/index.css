@@ -1,0 +1,198 @@
+/* === Base Styles === */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #87cefa, #f0f8ff);
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* === Navigation === */
+nav {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav > button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+nav > button:hover {
+  opacity: 0.7;
+}
+
+nav button.active {
+  background-color: #e67e22;
+  color: white;
+}
+
+/* === Shared Content === */
+#content {
+  text-align: center;
+  padding: 2rem;
+}
+
+#content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+#content h1 span {
+  color: #e67e22;
+}
+
+#content p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* === Hero Section (Home) === */
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.hero .cta {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #e67e22;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hero .cta:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* === Features Section (Home) === */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h2 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.feature-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* === About Page === */
+.about-hero {
+  margin-bottom: 2rem;
+}
+
+.about-story,
+.about-values {
+  margin: 2rem auto;
+  max-width: 800px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* === Contact Page === */
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #e67e22;
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
