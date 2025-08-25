@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo - List</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Todo List Manager</h1>
+      <button id="add-project-btn">+ Add Project</button>
+    </header>
+
+    <main>
+      <!-- Projects will be dynamically inserted here -->
+      <div id="projects-container">
+        <!-- Example project -->
+        <!-- <div class="project">
+          <div class="project-header">
+            <h2>Project: Demo Website</h2>
+            <button class="add-task-btn">+ Add Task</button>
+          </div>
+          <ul class="task-list">
+            <li class="task">
+              <input type="checkbox" />
+              <span>Design Homepage</span>
+            </li>
+            <li class="task">
+              <input type="checkbox" />
+              <span>Implement Navbar</span>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="project">
+          <div class="project-header">
+            <h2>Project: School App</h2>
+            <button class="add-task-btn">+ Add Task</button>
+          </div>
+          <ul class="task-list">
+            <li class="task">
+              <input type="checkbox" />
+              <span>Setup Database</span>
+            </li>
+            <li class="task">
+              <input type="checkbox" />
+              <span>Build Login Page</span>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </main>
+  </div>
+
+  <!-- === Project Dialog === -->
+  <dialog id="project-dialog" class="dialog-box">
+    <form method="dialog" class="dialog-form">
+      <h2>Add Project</h2>
+      <input type="text" placeholder="Project Name" name="project-name" id="project-name" required />
+      <div class="dialog-actions">
+        <button type="submit" class="project-confirm-btn">Add</button>
+        <button type="button" class="cancel-btn" onclick="this.closest('dialog').close()">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- === Task Dialog === -->
+  <!-- === Task Dialog === -->
+<dialog id="task-dialog" class="dialog-box">
+  <form method="dialog" class="dialog-form" id="task-form">
+    <h2>Add Task</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="task-name" placeholder="Name of your task..." required>
+
+    <label for="description">Description:</label>
+    <textarea placeholder="Add a description for your task" name="description" id="task-description" cols="30" rows="5" required></textarea>
+
+    <label for="due-date">Due Date:</label>
+    <input type="date" name="due-date" id="task-due-date">
+
+    <label for="priority">Priority:</label>
+    <select name="priority" id="task-priority" required>
+      <option value="low" selected>Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <div class="dialog-actions">
+      <button type="submit" class="task-confirm-btn">Add</button>
+      <button type="button" class="cancel-btn" onclick="this.closest('dialog').close()">Cancel</button>
+    </div>
+  </form>
+</dialog>
+
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
