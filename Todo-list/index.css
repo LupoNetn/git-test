@@ -1,6 +1,6 @@
 /* === Base Styles === */
 body {
-  font-family: 'Lucida Sans', sans-serif;
+  font-family: "Lucida Sans", sans-serif;
   margin: 0;
   padding: 0;
   color: #e0e0e0;
@@ -26,7 +26,7 @@ header {
   border-radius: 12px;
   padding: 15px 20px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
 header h1 {
@@ -74,12 +74,14 @@ header button:hover {
   backdrop-filter: blur(12px);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .project:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
 }
 .project-header {
   display: flex;
@@ -126,12 +128,12 @@ header button:hover {
   padding: 14px 16px;
   border-radius: 12px;
   transition: all 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 .task-item:hover {
   background: rgba(255, 255, 255, 0.12);
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 /* === Task Content === */
@@ -168,9 +170,18 @@ header button:hover {
   font-size: 0.85rem;
   text-transform: capitalize;
 }
-.priority-low { background: #e0f7e9; color: #2e7d32; }
-.priority-medium { background: #fff4e0; color: #e65100; }
-.priority-high { background: #fde0e0; color: #c62828; }
+.priority-low {
+  background: #e0f7e9;
+  color: #2e7d32;
+}
+.priority-medium {
+  background: #fff4e0;
+  color: #e65100;
+}
+.priority-high {
+  background: #fde0e0;
+  color: #c62828;
+}
 
 /* === Task Meta === */
 .task-date {
@@ -232,7 +243,7 @@ header button:hover {
   padding: 0;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(15px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
   max-width: 400px;
   width: 90%;
   color: #fff;
@@ -272,7 +283,7 @@ header button:hover {
   transform: scale(1.05);
 }
 .cancel-btn {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   padding: 8px 14px;
   border-radius: 6px;
@@ -281,6 +292,6 @@ header button:hover {
   transition: all 0.3s ease;
 }
 .cancel-btn:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: white;
 }

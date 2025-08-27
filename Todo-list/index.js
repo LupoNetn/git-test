@@ -36,7 +36,7 @@ function loadProjects() {
 
 function renderProjectWithTasks(project) {
   renderProject(project);
-  project.tasks.forEach(task => renderTask(project.projectId, task));
+  project.tasks.forEach((task) => renderTask(project.projectId, task));
 }
 
 // ==== Models ====
@@ -157,19 +157,17 @@ function renderTask(projectId, task) {
   `;
 
   // Edit button
-  taskElement
-    .querySelector(".edit-task-btn")
-    .addEventListener("click", () => {
-      editingTaskId = task.taskId;
-      currentProjectId = projectId;
+  taskElement.querySelector(".edit-task-btn").addEventListener("click", () => {
+    editingTaskId = task.taskId;
+    currentProjectId = projectId;
 
-      taskNameInput.value = task.taskName;
-      taskDescriptionInput.value = task.description;
-      taskDueDateInput.value = task.dueDate;
-      taskPriorityInput.value = task.priority;
+    taskNameInput.value = task.taskName;
+    taskDescriptionInput.value = task.description;
+    taskDueDateInput.value = task.dueDate;
+    taskPriorityInput.value = task.priority;
 
-      taskDialog.showModal();
-    });
+    taskDialog.showModal();
+  });
 
   // Delete button
   taskElement
