@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Interface - Practice</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="carousel">
+      <img src="firstimg-carousel.jpg" alt="Carousel Image" class="carousel-img">
+      <div class="btns">
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+      </div>
+    </div>
+   
+   <script>
+    const next = document.querySelector('.next')
+    const prev = document.querySelector('.prev')
+    const img = document.querySelector('.carousel-img')
+
+    const imgArr = [
+        'firstimg-carousel.jpg',
+        'secondimg-carousel.jpg',
+        'thirdimg-carousel.jpg'
+    ]
+
+    let index = 0
+
+    function nextImg() {
+       if(index < imgArr.length - 1) {
+         index++
+       } else {
+         index = 0 // loop back
+       }
+       img.src = imgArr[index]
+    }
+
+    function prevImg() {
+       if(index > 0) {
+         index--
+       } else {
+         index = imgArr.length - 1 // loop to last
+       }
+       img.src = imgArr[index]
+    }
+
+    next.addEventListener('click', nextImg)
+    prev.addEventListener('click', prevImg)
+   </script>
+</body>
+</html>
