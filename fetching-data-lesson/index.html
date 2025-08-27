@@ -9,22 +9,26 @@
     <img src="#" alt="" />
 
     <script>
-        let data;
-      const img = document.querySelector("img");
-      fetch(
-        "https://api.giphy.com/v1/gifs/translate?api_key=VPSXQSnYk1qSNqMZeOUoHGa2I81RVu4E&s=dogs",
-        { mode: "cors" }
-      )
-      .then((response) => {
-        return response.json();
-      })
-      .then((response) => {
-        console.log(response);
-       img.src = response.data.images.original.url;
-      })
-        .catch((error) => {
-            console.error(error);
-        });
+      async function fetchGif() {
+        try {
+          const response = await fetch(
+            "https://api.giphy.com/v1/gifs/translate?api_key=VPSXQSnYk1qSNqMZeOUoHGa2I81RVu4E&s=dogs",
+            { mode: "cors" }
+          );
+
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+
+          const data = await response.json();
+          console.log(data);
+          const img = document.querySelector("img");
+          img.src = data.data.images.original.url;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+        fetchGif();
     </script>
   </body>
 </html>
